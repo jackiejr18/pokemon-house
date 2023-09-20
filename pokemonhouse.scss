@@ -38,3 +38,23 @@ $roof-skew: 24deg;
 function calcRelativeSize($val) {
 	@return calc(100% - (#{$pixel} * #{$val}));
 }
+
+@mixin windowDeets($shineSize, $shadowHeight: $pixel, $shineColor: var(--primary-color), $shadowCoder
+:var (--secondary-color)) {
+	&::before,
+	&::after {
+		content '';
+		position: absolute;
+	}
+
+	&::before {
+		top: 0;
+		left: 0;
+		height: 0;
+		width: 0;
+		border-left: solid ($pixel * $shineSize) $shineColor;
+		border-top: solid ($pixel * $shineSize) $shineColor;
+		border-bottom: solid ($pixel * $shineSize) transparent;
+		border-right: solid ($pixel * $shineSize) transparent;
+	}
+}
