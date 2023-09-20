@@ -57,4 +57,11 @@ function calcRelativeSize($val) {
 		border-bottom: solid ($pixel * $shineSize) transparent;
 		border-right: solid ($pixel * $shineSize) transparent;
 	}
+
+	&::after {
+		bottom: 0;
+		height: $shadowHeight;
+		width: 100%;
+		background-color: $shadowCoder;
+	}
 }
