@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Pokemon Classic';
 	src: url(fonts/Pokemon_classic.ttf) format('truetype');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -27,3 +27,14 @@ $colors: (
 	fuschia: #f87878,
 	cinnabar: #f84040 
 );
+
+$secondary-color: #58b8f8;
+
+$primary-font: 'Pokemon Classic', monospace;
+
+$pixel: 0.25rem; 
+$roof-skew: 24deg; 
+
+function calcRelativeSize($val) {
+	@return calc(100% - (#{$pixel} * #{$val}));
+}

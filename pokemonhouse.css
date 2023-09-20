@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Pokemon Classic";
   src: url(fonts/Pokemon_classic.ttf) format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 * {
