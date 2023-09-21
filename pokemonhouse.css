@@ -87,3 +87,35 @@ body {
   background-color: var(--base-color);
   overflow: hidden;
 }
+
+.house-base .house-window-wrapper {
+  bottom: 1.5rem;
+  left: 6.5rem;
+}
+
+.house-base-detail {
+  position: absolute;
+  z-index: 1;
+  bottom: 1.25rem;
+  height: 0.25rem;
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
+.house-base-detail::before, .house-base-detail::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: calc(100% - (0.25rem * 4));
+  height: 0.25rem;
+  background-color: var(--primary-color);
+  transform: translateX(-50%);
+}
+
+.house-base-detail::before {
+  top: -1rem;
+}
+
+.house-base-detail::after {
+  top: -2rem;
+}
