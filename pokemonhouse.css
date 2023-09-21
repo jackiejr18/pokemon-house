@@ -77,3 +77,13 @@ body {
 .house.cinnabar {
   --primary-color: #f84040;
 }
+
+.house-base {
+  position: relative;
+  height: 6.5rem;
+  width: 13.5rem;
+  border: solid 0.25rem #555;
+  border-radius: 0.5rem;
+  background-color: var(--base-color);
+  overflow: hidden;
+}
