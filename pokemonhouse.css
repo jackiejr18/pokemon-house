@@ -516,3 +516,50 @@ house-upper-detail::before {
 .color-controls-button.pallet {
   background-color: #b888f8;
 }
+
+.color-controls-button.viridian {
+  background-color: #7ff71f;
+}
+
+.color-controls-button.pewter {
+  background-color: #909078;
+}
+.color-controls-button.cerulean {
+  background-color: #2840f8;
+}
+
+.color-controls-button.vermillion {
+  background-color: #f89800;
+}
+
+.color-controls-button.lavender {
+  background-color: #c820f8;
+}
+
+.color-controls-button.celadon {
+  background-color: #28f828;
+}
+
+.color-controls-button.saffron {
+  background-color: #f8f800;
+}
+
+.color-controls-button.fuschia {
+  background-color: #f87878;
+}
+
+.color-controls-button.cinnabar {
+  background-color: #f84040;
+}
+
+.color-controls-button.active::after {
+  transform: translate(-300%, -50%);
+  opacity: 1;
+}
+
+.color-controls-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
