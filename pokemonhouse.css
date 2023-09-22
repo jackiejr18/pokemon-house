@@ -304,3 +304,129 @@ house-upper-detail::before {
   bottom: 2rem;
   background-color: var(--primary-color);
 }
+
+.house-upper-shadow {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 0.25rem;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.house-upper-shadow::before, .house-upper-shadow::after {
+  content: "";
+  position: absolute;
+  width: 3.25rem;
+  height: 1.25rem;
+  background-color: var(--primary-color);
+}
+
+.house-upper-shadow::before {
+  transform: skewY(-24deg);
+}
+
+.house-upper-shadow::after {
+  right: 0;
+  transform: skewY(24deg);
+}
+
+.house-roof {
+  position: absolute;
+  z-index: 5;
+  bottom: 8.25rem;
+  left: 2.5rem;
+  width: 8.5rem;
+  height: 3.5rem;
+  border-top: solid 0.25rem #555;
+  border-bottom: solid 0.25rem #555;
+  background-color: var(--primary-color);
+}
+
+.house-roof::before {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  width: 100%;
+  height: 0.25rem;
+  border-bottom: solid 0.25rem #555;
+  background-color: var(--secondary-color);
+}
+
+.house-roof-side {
+  content: "";
+  position: absolute;
+  top: 0.625rem;
+  width: 3.75rem;
+  height: 3.5rem;
+  border-top: solid 0.25rem #555;
+  border-bottom: solid 0.25rem #555;
+  background-color: var(--secondary-color);
+}
+
+.house-roof-side::before {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  width: calc(100% - (0.25rem * 1));
+  height: 0.25rem;
+  border-bottom: solid 0.25rem #555;
+  background-color: var(--secondary-color);
+}
+
+.house-roof-side-left {
+  right: 100%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-left: solid 0.25rem #555;
+  box-shadow: inset 0.25rem 0.25rem 0 var(--base-color);
+  transform: skewY(-24deg);
+}
+
+.house-roof-side-left::before {
+  border-bottom-left-radius: 0.5rem;
+  border-left: solid 0.25rem #555;
+}
+
+.house-roof-side-right {
+  left: 100%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-right: solid 0.25rem #555;
+  box-shadow: inset -0.25rem 0.25rem 0 var(--base-color);
+  transform: skewY(24deg);
+}
+
+.house-roof-side-right::before {
+  right: 0;
+  border-bottom-right-radius: 0.5rem;
+  border-right: solid 0.25rem #555;
+}
+
+.house-roof-detail {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  height: 0.25rem;
+  background-color: var(--secondary-color);
+}
+
+.house-roof-detail::before, .house-roof-detail::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.25rem;
+}
+
+.house-roof-detail::before {
+  bottom: 1rem;
+  background-color: var(--secondary-color);
+}
+
+.house-roof-detail::after {
+  bottom: 1.75rem;
+  background-color: var(--base-color);
+}
